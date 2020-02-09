@@ -1,7 +1,16 @@
-// $text: #546e7a;
+$text: #141414;
+$red: #f5112c;
 
 
-// @mixin f300 {
-//   font-family: 'Roboto', sans-serif;
-//   font-weight: 300;
-// }
+@mixin ge {
+  font-family: "Gilroy-ExtraBold";
+  font-weight: 800;
+}
+@mixin gl {
+  font-family: "Gilroy-Light";
+  font-weight: 300;
+}
+@mixin msc {
+  font-family: "MuseoSansCyrl-900";
+  font-weight: 400;
+}

@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 *,
 *::before,
@@ -14,7 +15,12 @@ body {
 body{
   overflow-x: hidden;
   position: relative;
-  min-width: 320px;
+  min-width: 32rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.09rem;
+  @include gl;
+  color: $text;
 }
 a{
   display: inline-block;
@@ -45,14 +51,64 @@ h1, h2, h3, h4, h5, h6{
 	flex: 0 0 auto;
 }
 .container{
-  max-width: 1200px;
+  max-width: 116rem;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 1rem;
 }
+.ibg{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wave::before{
+  content: '';
+  position: absolute;
+  background-image: url(../images/icon/wave.png);
+  width: 14.5rem;
+  height: 1.9rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.circle::before{
+  content: '';
+  position: absolute;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 50%;
+  border: 15px solid #2429ff;
+}
+.point::before{
+  content: '';
+  position: absolute;
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+  background-color: #2429ff;
+}
+.title{
+  color: #000;
+  @include ge;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.225rem;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 6.4rem;
+    height: 0.7rem;
+    background-color: $red;
+    left: 0;
+    bottom: 0;
+    border-radius: 0;
+  }
+}
+
 .container-fluid{
-  max-width: 1386px;
+  max-width: 195rem;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 1.5rem;
 }
 
 // .menu__btn{

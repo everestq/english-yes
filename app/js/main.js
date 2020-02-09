@@ -1,4 +1,13 @@
 $(function(){
+  $('.review__slider').slick({
+    dots: true,
+    infinite: true,
+    arrows: false,
+    speed: 600,
+  });
+
+  new WOW().init();
+
 // //---------------------------------------adaptive menu
 // $('.menu__btn').on('click', function(){
 //     $('.menu__list').slideToggle();
@@ -38,6 +47,8 @@ $(function(){
 //   $('input[type="file"], select').styler();
 
 
+// //---------------------------------------maskedinput
+$("#phone").mask("+7(999) 999-9999");
 // //---------------------------------------animation
 //   wow = new WOW({
 //     boxClass: 'wow',
