@@ -433,9 +433,13 @@
   }
   .review {
     margin-bottom: 5rem;
+    padding-top: 0;
   }
   .form {
     padding: 12.5rem 8rem 12.5rem;
+  }
+  .stages {
+    margin-bottom: 18rem;
   }
 }
 @media (max-width: 600px){
@@ -605,6 +609,9 @@
     width: 100%;
     max-width: 47rem;
     padding: 2.3rem 1rem;
+  }
+  .item-2 .questions__item-img div {
+    top: -10.5rem;
   }
 }
 @media (max-width: 396px){

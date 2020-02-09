@@ -381,7 +381,6 @@
   &__item-text {
     font-size: 1.4rem;
     letter-spacing: 0.07rem;
-    @include gl;
   }
 }
 //=====================leading end
@@ -760,14 +759,6 @@
     margin-bottom: 2rem;
   }
 
-  &__column-name {
-    color: $text;
-    @include gl;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    letter-spacing: 0.09rem;
-  }
-
   &__column-social {
     margin-bottom: 2.2rem;
     ul {
@@ -856,12 +847,6 @@
 }
 
 //=====================form end
-
-
-
-
-
-
 
 
 @import 'media';
