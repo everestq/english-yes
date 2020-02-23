@@ -78,6 +78,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 50%;
 }
 .header__title{
   position: relative;
@@ -140,11 +141,12 @@
     &::before{
     content:'';
     position: absolute;
-    width: 2.3rem;
+    width: 2.4rem;
     height: 113.3rem;
     top: 29rem;
     left: 26.5rem;
     background-image: url(../images/questions/layer.png);
+    background-repeat: no-repeat;
   }
 }
 .bg-color{
@@ -472,12 +474,15 @@
     &:after{
       position: absolute;
       content: "";
-      bottom: -45rem;
+      bottom: -46rem;
       left: 65%;
-      width: 63.5rem;
-      height: 64.7rem;
+      width: 62.5rem;
+      height: 63.7rem;
       background-image: url(../images/icon/stages-layer.png);
       z-index: -1;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
   &__title {
@@ -634,6 +639,7 @@
     max-width: 16.5rem;
     height: 16.5rem;
     width: 100%;
+    margin: 0 0 0 0.1rem;
   }
   &__item-wrapper{
     line-height: 2.8rem;
@@ -719,6 +725,7 @@
       top: -10rem;
       right: -8.9rem;
       background-image: url(../images/lesson/4-layers.png);
+      background-size: cover;
     }
   }
 
